@@ -4,9 +4,14 @@
 
 **Gurobi.py:** This file contains the constraint programming model built using the Gurobi solver to find matches.
 
-**Datasets:** The "Datasets" folder contains datasets of different sizes for testing.
+**Data generator.py:** This file contains the Python code synthetic data creation.
 
-## Usage Instructions
+**Data_preprocesser.py:** This file contains the Python code for the data preprocessor.
+
+**Datasets:** The "Datasets" folder contains datasets of different sizes for testing.
+**Postcode Datasets:** The "Datasets" folder contains a dataset of Postcodes for data_genrator.
+
+## Usage Instructions- Solvers
 
 ### Step 1: Edit the Code
 - Open the Python code file you wish to use in a text editor or integrated development environment (IDE) of your choice.
@@ -42,3 +47,16 @@
 - You'll see information about the optimal solution found, the objective value, the number of nodes explored, and the assignments of drivers, riders, and shifters.
 
 Repeat these steps for each dataset you want to analyze. The code should work with datasets of varying sizes as long as they have the same format as "Filtered(15).xlsx" and are named accordingly.
+
+## Usage Instructions- Data
+
+### Data generator: To create a new synthetic dataset, just run the script with the required amount of entries in the 'num_entries' option.
+### Data preprocessing: To preprocess the dataset, just locate the following lines:
+
+    ```python
+    drivers_df = pd.read_excel(Dataset.xlsx', sheet_name='Driver')
+    riders_df = pd.read_excel('Dataset.xlsx', sheet_name='Rider')
+    shifters_df = pd.read_excel('Dataset.xlsx', sheet_name='Shifter')
+    ```
+
+- Replace `'Dataset.xlsx'` with the path to the dataset you want to preprocess. For example, if you want to use "Dataset(100).xlsx," change it to `'Dataset(100).xlsx'`.
