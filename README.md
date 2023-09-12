@@ -54,10 +54,9 @@ Repeat these steps for each dataset you want to analyze. The code should work wi
 ### Data generator: To create a new synthetic dataset, just run the script with the required amount of entries in the 'num_entries' option.
 ### Data preprocessing: To preprocess the dataset, just locate the following lines:
 
-    ```python
-    drivers_df = pd.read_excel(Dataset.xlsx', sheet_name='Driver')
-    riders_df = pd.read_excel('Dataset.xlsx', sheet_name='Rider')
-    shifters_df = pd.read_excel('Dataset.xlsx', sheet_name='Shifter')
-    ```
-
+```python
+drivers_df = pd.read_excel(Dataset.xlsx', sheet_name='Driver')
+riders_df = pd.read_excel('Dataset.xlsx', sheet_name='Rider')
+shifters_df = pd.read_excel('Dataset.xlsx', sheet_name='Shifter')
+```
 - Replace `'Dataset.xlsx'` with the path to the dataset you want to preprocess. For example, if you want to use "Dataset(100).xlsx," change it to `'Dataset(100).xlsx'`.
