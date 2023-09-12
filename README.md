@@ -29,15 +29,13 @@
 - Open a terminal or command prompt.
 
 ### Step 5: Execute the Code
-- Navigate to the directory where you saved the Python script.
-
 - Run the code using the Python interpreter with the following command:
 
     ```bash
-    python your_script_name.py
+    python file_name.py
     ```
 
-  Replace `your_script_name.py` with the name of your Python script file.
+  Replace `file_name.py` with the name of the Python script file.
 
 ### Step 6: View the Output
 - The code will execute and print results to the terminal or command prompt.
