@@ -52,6 +52,7 @@ Repeat these steps for each dataset you want to analyze. The code should work wi
 ## Usage Instructions- Data
 
 ***Data generator:*** To create a new synthetic dataset, just run the script with the required amount of entries in the 'num_entries' option.
+
 ***Data preprocessing:***  To preprocess the dataset, just locate the following lines:
 
 ```python
